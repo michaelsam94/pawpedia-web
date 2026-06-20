@@ -38,6 +38,13 @@ export function App() {
             <Route path="/breeds/:breedId" element={<BreedDetailPage />} />
             <Route path="/favorites" element={<FavoritesPage />} />
           </Routes>
+
+          <footer className="app-footer">
+            Developed by{' '}
+            <a href="https://michaelsam94.tech/" target="_blank" rel="noreferrer">
+              michaelsam94
+            </a>
+          </footer>
         </div>
       </BrowserRouter>
     </QueryClientProvider>
