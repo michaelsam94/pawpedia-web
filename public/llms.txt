@@ -1,0 +1,12 @@
+# PawPedia
+
+PawPedia is a cat breed explorer for comparing breeds by temperament, origin, weight, grooming, energy, and family fit.
+
+Important pages:
+
+- Home and breed catalog: https://pawpediaa.pages.dev/
+- Maine Coon cat guide: https://pawpediaa.pages.dev/breeds/maine-coon-cat-guide
+
+Data note:
+
+PawPedia uses TheCatAPI-sourced breed data for catalog fields and ratings. PawPedia is not a veterinary service; health-related breed fields are informational and should not replace advice from a qualified veterinarian.

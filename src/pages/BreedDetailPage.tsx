@@ -2,6 +2,7 @@ import { ArrowLeft, ExternalLink, Heart } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
 import { useBreed, useBreedImages } from '../hooks/useBreeds';
 import { useAddFavorite, useFavoriteIds, useRemoveFavorite } from '../hooks/useFavorites';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 export function BreedDetailPage() {
   const { breedId } = useParams();
@@ -10,6 +11,14 @@ export function BreedDetailPage() {
   const favoriteIds = useFavoriteIds();
   const addFavorite = useAddFavorite();
   const removeFavorite = useRemoveFavorite();
+
+  usePageMeta({
+    title: breed.data ? `${breed.data.name} Cat Breed | PawPedia` : 'Cat Breed Details | PawPedia',
+    description: breed.data
+      ? `Review ${breed.data.name} cat breed temperament, origin, life span, weight, energy, grooming, and images on PawPedia.`
+      : 'Review cat breed temperament, origin, life span, weight, energy, grooming, and images on PawPedia.',
+    canonicalPath: breedId ? `/breeds/${breedId}` : '/breeds'
+  });
 
   if (breed.isLoading) {
     return <main className="detail-page"><p className="state-text">Loading breed...</p></main>;

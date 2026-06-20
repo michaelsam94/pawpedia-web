@@ -5,12 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="PawPedia is a searchable cat breed explorer powered by PawPedia API and TheCatAPI data."
+      content="PawPedia is a searchable cat breed explorer for comparing cat breeds by temperament, origin, weight, grooming, energy, and family fit."
     />
-    <title>PawPedia</title>
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="canonical" href="https://pawpediaa.pages.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PawPedia" />
+    <meta property="og:title" content="PawPedia Cat Breed Explorer" />
+    <meta
+      property="og:description"
+      content="Compare cat breeds by temperament, energy, grooming, origin, weight, and family fit using structured breed data."
+    />
+    <meta property="og:url" content="https://pawpediaa.pages.dev/" />
+    <meta name="twitter:card" content="summary" />
+    <title>PawPedia Cat Breed Explorer</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "PawPedia",
+        "alternateName": "PawPedia Cat Breed Explorer",
+        "url": "https://pawpediaa.pages.dev/",
+        "description": "PawPedia helps people compare cat breeds by temperament, origin, weight, grooming, energy, and family fit.",
+        "inLanguage": "en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://pawpediaa.pages.dev/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main>
+        <h1>PawPedia Cat Breed Explorer</h1>
+        <p>
+          PawPedia helps people compare cat breeds by temperament, origin, weight,
+          grooming, energy, and family fit. Use PawPedia to research breeds before
+          choosing a cat for an apartment, family home, or multi-pet household.
+        </p>
+        <h2>Compare cat breeds by practical traits</h2>
+        <p>
+          The catalog focuses on questions people ask before adopting or buying a cat:
+          which breeds are affectionate, which breeds need more grooming, which breeds
+          have higher energy, and which cats may fit families or apartments.
+        </p>
+        <h2>Featured cat breed guide</h2>
+        <p>
+          Read the <a href="/breeds/maine-coon-cat-guide">Maine Coon cat guide</a>
+          for a plain-English overview of Maine Coon temperament, grooming, apartment
+          fit, and family suitability.
+        </p>
+      </main>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

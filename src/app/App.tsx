@@ -5,6 +5,7 @@ import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom';
 import { BreedDetailPage } from '../pages/BreedDetailPage';
 import { CatalogPage } from '../pages/CatalogPage';
 import { FavoritesPage } from '../pages/FavoritesPage';
+import { MaineCoonGuidePage } from '../pages/MaineCoonGuidePage';
 import '../styles/app.css';
 
 export function App() {
@@ -33,6 +34,7 @@ export function App() {
 
           <Routes>
             <Route path="/" element={<CatalogPage />} />
+            <Route path="/breeds/maine-coon-cat-guide" element={<MaineCoonGuidePage />} />
             <Route path="/breeds/:breedId" element={<BreedDetailPage />} />
             <Route path="/favorites" element={<FavoritesPage />} />
           </Routes>
